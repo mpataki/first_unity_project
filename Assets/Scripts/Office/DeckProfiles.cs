@@ -15,6 +15,8 @@ public class DeckProfiles : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (pressed) return;
+
 		if (this.transform.position.y > startingPos) 
 			acceleration.y = -acceleration_y;
 		else 
