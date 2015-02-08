@@ -5,8 +5,8 @@ public class camera : MonoBehaviour {
 
 	Vector3 offset;
 	Player player;
-	Vector3 bgMinScreenPoint;
-	Vector3 bgMaxScreenPoint;
+	Vector3 bgMinPoint;
+	Vector3 bgMaxPoint;
 
 	// Use this for initialization
 	void Start () {
@@ -15,8 +15,8 @@ public class camera : MonoBehaviour {
 		offset = transform.position - player.transform.position;
 
 		GameObject bg = GameObject.Find("Background");
-		bgMinScreenPoint = bg.renderer.bounds.min;
-		bgMaxScreenPoint = bg.renderer.bounds.max;
+		bgMinPoint = bg.renderer.bounds.min;
+		bgMaxPoint = bg.renderer.bounds.max;
 	}
 	
 	// Update is called once per frame
@@ -35,9 +35,9 @@ public class camera : MonoBehaviour {
 		float leftDelta  = Mathf.Abs( leftEdge - playerScreenPos.x );
 		float rightDelta = Mathf.Abs( rightEdge - playerScreenPos.x );
 
-		if (playerScreenPos.x <= leftEdge && (leftCameraEdge.x - leftDelta) > bgMinScreenPoint.x)
+		if (playerScreenPos.x <= leftEdge && (leftCameraEdge.x - leftDelta) > bgMinPoint.x)
 			transform.Translate( - leftDelta, 0, 0 );
-		else if (playerScreenPos.x >= rightEdge && (rightCameraEdge.x + rightDelta) < bgMaxScreenPoint.x )
+		else if (playerScreenPos.x >= rightEdge && (rightCameraEdge.x + rightDelta) < bgMaxPoint.x )
 			transform.Translate( rightDelta, 0, 0 );
 	}
 }
