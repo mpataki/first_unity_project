@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class camera : MonoBehaviour {
-
-	Vector3 offset;
+	
 	Player player;
 	Vector3 bgMinPoint;
 	Vector3 bgMaxPoint;
@@ -12,7 +11,6 @@ public class camera : MonoBehaviour {
 	void Start () {
 		GameObject profile_go = GameObject.Find("Player");
 		player = (Player)profile_go.GetComponent(typeof(Player));
-		offset = transform.position - player.transform.position;
 
 		GameObject bg = GameObject.Find("Background");
 		bgMinPoint = bg.renderer.bounds.min;

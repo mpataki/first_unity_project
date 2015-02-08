@@ -1,12 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Office/DeckProfiles.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Office/SuspectPic.cs">
     <Files>
-      <File FileName="Assets/Scripts/Office/LoadOnClick.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Office/DeckProfiles.cs" Line="38" Column="1" />
-      <File FileName="Assets/Scripts/Office/Profile.cs" Line="23" Column="34" />
-      <File FileName="Assets/Scripts/stage_1/camera.cs" Line="38" Column="86" />
-      <File FileName="Assets/Scripts/stage_1/Player.cs" Line="31" Column="1" />
+      <File FileName="Assets/Scripts/Office/Profile.cs" Line="23" Column="5" />
+      <File FileName="Assets/Scripts/stage_1/camera.cs" Line="13" Column="3" />
+      <File FileName="Assets/Scripts/stage_1/Player.cs" Line="31" Column="7" />
+      <File FileName="Assets/Scripts/Office/SuspectPic.cs" Line="34" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

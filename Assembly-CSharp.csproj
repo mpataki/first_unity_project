@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Office\Profile.cs" />
      <Compile Include="Assets\Scripts\Office\SuspectPic.cs" />
      <Compile Include="Assets\Scripts\stage_1\Player.cs" />
+     <Compile Include="Assets\Scripts\stage_1\Suspect.cs" />
      <Compile Include="Assets\Scripts\stage_1\camera.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
  <Reference Include="UnityEngine.UI">
