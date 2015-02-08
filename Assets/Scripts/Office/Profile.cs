@@ -16,7 +16,11 @@ public class Profile : MonoBehaviour {
 	void Update () {
 		if ( velocity.y != 0 ) {
 			this.transform.Translate(0, velocity.y * Time.deltaTime, 0);
-			if (this.transform.position.y >= topPos) velocity.y = 0;
+			if (this.transform.position.y >= topPos) {
+				velocity.y = 0;
+				GameObject go = GameObject.Find("suspect_picture");
+				((SuspectPic)go.GetComponent(typeof(SuspectPic))).initializeSway();
+			}
 		}
 	}
 
